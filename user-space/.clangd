@@ -1,0 +1,15 @@
+CompileFlags:
+  # Không sử dụng compile_commands.json của kernel ở thư mục gốc
+  CompilationDatabase: none
+  Compiler: /home/as/x-tools/arm-bootlin-linux-gnueabihf/bin/arm-bootlin-linux-gnueabihf-gcc
+  Add:
+    - --target=arm-linux-gnueabihf
+    - --sysroot=/home/as/x-tools/arm-bootlin-linux-gnueabihf/arm-bootlin-linux-gnueabihf/sysroot
+    - -Wall
+    - -Wextra
+
+Completion:
+  HeaderInsertion: Never
+
+Diagnostics:
+  UnusedIncludes: None
